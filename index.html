@@ -12,9 +12,33 @@
 </head>
 <body>
     <main class="container">
-        <p class="hello font-effect-anaglyph">Hello</p>
-        <p class="name-is">my name is</p>
-        <p class="name">Patrick (he/him)</p>
+        <div id="tag" class="tag">
+            <p class="hello font-effect-anaglyph">Hello</p>
+            <p class="name-is">my name is</p>
+            <p id="name" class="name">Patrick</p>
+            <p id="pronouns" class="pronouns">(he/him)</p>
+        </div>
+        <input id="name-input" class="input" placeholder="enter name">
+        <input id="pronouns-input" class="input" placeholder="enter pronouns">
+        <button id="name-submit">Submit</button>
+        <section class="styles">
+            <button id="purple" class="bg">Purple</button>
+            <button id="blue" class="bg">Blue</button>
+            <button id="red" class="bg">Red</button>
+        </section>
+        <label for="fonts">Choose a font</label>
+            <select name="fonts" id="fonts">
+                <option>--choose a font</option>
+                <option value="Helvetica">Helvetica</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Tangerine">Tangerine</option>
+            </select>
+        <div class="bottom">
+            <span>background change counter</span>
+            <p id="counter" class="counter"></p>
+        </div>
     </main>
+
+<script src="app.js"></script>    
 </body>
 </html>
